@@ -31,6 +31,12 @@ header{
     background-repeat: no-repeat;
 }
 
+.fourth-article-stars{
+    background-image: url(../img/stars.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 /* DUPLICATE */
 
 header nav ul li, .intro{
@@ -181,6 +187,14 @@ header nav ul li, .intro{
     width: 100%;
     min-height: 500px;
     text-align: center;
+}
+
+.fourth-article-stars{
+    width: 28%;
+    min-height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
 }
 
 /* FOOTER */
