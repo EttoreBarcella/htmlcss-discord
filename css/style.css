@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* COMMON */
-
-
 .container-head, .container-main, .container-footer{
     max-width: 1000px;
     min-height: 500px;
@@ -20,9 +22,7 @@
     clear: both;
     display: table;
 }
-
 /* BG COLOR PROJECT */
-
 header{
     position: relative;
     background-color: #3161e0;
@@ -30,31 +30,23 @@ header{
     background-size:100%;
     background-repeat: no-repeat;
 }
-
 .background{
     background-color: #f6f6f6;
 }
-
 footer{
     background-color: black;
 }
-
 .fourth-article-stars{
     background-image: url(../img/stars.svg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
-
-
 /* DUPLICATE */
-
 header nav ul li, .intro{
     display: inline-block;
     text-align: center;
     
 }
-
 .hero-link-b, .hero-link-w, .link-end-main{
     display: inline-block;
     text-decoration: none;
@@ -66,38 +58,29 @@ header nav ul li, .intro{
     text-align: center;
     transition: box-shadow 0.3s
 }
-
 .hero-link-b:hover, .hero-link-w:hover, .link-end-main:hover{
-    box-shadow:rgba(33,33,33,.2);
+    box-shadow: 20px 20px 20px rgba(33,33,33,.2); ;
 }
-
 .intro, h2::first-letter, .col ul li a::first-letter, h1::first-letter, p::first-letter, h3::first-letter, h4::first-letter{
     text-transform: capitalize;
 }
-
 .intro:hover, .col ul li a:hover{
     text-decoration: underline;
 }
-
 .logo, .logo-footer{
     float: left;
     margin-top: 10px;
 }
-
 /* HEADER */
-
  header nav ul{
     display: inline-block;
     width: 80%;
     text-align: center;
 }
-
 .logo,{
     width: 14%;
     vertical-align: middle;
 }
-
-
 .open-disc{
     display:inline-block ;
     float: right;
@@ -112,8 +95,6 @@ header nav ul li, .intro{
     text-align: center;
     margin-top: 15px;
 }
-
-
 .intro{
     text-decoration: none;
     color: white;
@@ -122,10 +103,7 @@ header nav ul li, .intro{
     margin: 10px;
     font-weight: bold;
 }
-
-
 /* SEZIONE HERO HEADER */
-
 .hero{
     position: absolute;
     top: 50%;
@@ -133,44 +111,34 @@ header nav ul li, .intro{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 .hero h1{
     color: white;
     font-size: 50px;
     padding-bottom: 30px;
 }
-
 .hero p{
     color: white;
     font-size: 22px;
     font-weight: bold;
 }
-
-
 .hero-link-w{
     color: white;
     background-color: black;
 }
-
 .hero-link-b{
     color: black;
     background-color: white;
 }
-
-
 /* MAIN */
-
 .container-main{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 .box-img{
     width: 70%;
     float: left;
     min-height: 500px;
 }
-
 .box-text{
     display: inline-block;
     width: 30%;
@@ -180,32 +148,25 @@ header nav ul li, .intro{
     padding-top: 40px;
     text-align: left;
 }
-
 .box-text h2{
     font-size: 40px;
     padding-bottom: 20px;
 }
-
-
 .box-img img{
     width: 100%;
 }
-
 /* MAIN LAST ARTICLE */
-
 .fourth-article{
     width: 50%;
     min-height: 100px;
     text-align: center;
     margin: auto;
 }
-
 .fourth-img{
     width: 100%;
     min-height: 500px;
     text-align: center;
 }
-
 .fourth-article-stars{
     width: 28%;
     min-height: 100px;
@@ -213,20 +174,17 @@ header nav ul li, .intro{
     line-height: 100px;
     margin: auto;
 }
-
 .link-end-main{
     background-color: #7289da;
     color: white;
     margin-top: 0;
 }
-
 /* FOOTER */
 .col-big{
     float: left;
     width: 40%;
     min-height: 300px;
 }
-
 .col-big h3{
     text-align: left;
     width: 70%;
@@ -234,57 +192,47 @@ header nav ul li, .intro{
     font-size: 30px;
     padding-top: 40px;
 }
-
 .col-big h5, .social i{
     display: inline-block;
     vertical-align:middle ;
     color: white;
 }
-
 .col-big .flag{
     display: inline-block;
     width: 20px;
     vertical-align: middle;
 }
-
 .col-big .flag, h5{
     padding-top: 20px;
 }
-
 h5 i{
     font-size: 8px;
 }
-
 .social i{
     margin: 10px 5px;
 }
-
 .col{
     float: left;
     width: 15%;
     /* background-color: aqua; */
     min-height: 300px;
 }
-
 .col h4{
     color: #7289da;
     padding-top: 40px;
 }
-
 .col ul li a{
     display: inline-block;
     color: white;
     text-decoration: none;
     margin-top: 5px;
 }
-
 .footer-divider{
     display: inline-block;
     margin: 30px 0 30px 0px;
     width: 100%;
     border: 1px solid #7289da ;
 }
-
 .link-footer{
     float: right;
 }
