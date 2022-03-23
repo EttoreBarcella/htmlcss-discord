@@ -9,7 +9,7 @@
 /* COMMON */
 
 
-.container-head, .container-main{
+.container-head, .container-main, .container-footer{
     max-width: 1000px;
     min-height: 500px;
     margin: auto;
@@ -24,11 +24,15 @@
 /* BG COLOR PROJECT */
 
 header{
-    background-color: #3161e0;
     position: relative;
+    background-color: #3161e0;
     background-image: url(../img/jumbo.png);
     background-size:100%;
     background-repeat: no-repeat;
+}
+
+footer{
+    background-color: black;
 }
 
 .fourth-article-stars{
@@ -45,24 +49,26 @@ header nav ul li, .intro{
     
 }
 
-.hero-link-b, .hero-link-w{
+.hero-link-b, .hero-link-w, .link-end-main{
     display: inline-block;
     text-decoration: none;
     height: 32px;
     padding: 8px 20px;
     border-radius: 40px;
-    margin-top: 20px;
     line-height: 16px;
+    margin-top: 20px;
     text-align: center;
 }
 
-.intro, h2::first-letter, h1::first-letter, p::first-letter{
+.intro, h2::first-letter, .col ul li a::first-letter, h1::first-letter, p::first-letter, h3::first-letter, h4::first-letter{
     text-transform: capitalize;
 }
 
+.intro:hover, .col ul li a:hover{
+    text-decoration: underline;
+}
+
 /* HEADER */
-
-
 
  header nav ul{
     display: inline-block;
@@ -103,9 +109,6 @@ header nav ul li, .intro{
     font-weight: bold;
 }
 
-.intro:hover{
-    text-decoration: underline;
-}
 
 /* SEZIONE HERO HEADER */
 
@@ -197,4 +200,73 @@ header nav ul li, .intro{
     margin: auto;
 }
 
+.link-end-main{
+    background-color: #7289da;
+    color: white;
+    margin-top: 0;
+}
+
 /* FOOTER */
+.col-big{
+    float: left;
+    width: 40%;
+    min-height: 300px;
+}
+
+.col-big h3{
+    text-align: left;
+    width: 70%;
+    color: #7289da;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.col-big h5, i{
+    display: inline-block;
+    vertical-align:middle ;
+    color: white;
+}
+
+.col-big .flag{
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.col-big .flag, h5{
+    padding-top: 20px;
+}
+
+h5 i{
+    font-size: 8px;
+}
+
+.social i{
+    margin: 10px 5px;
+}
+
+.col{
+    float: left;
+    width: 15%;
+    /* background-color: aqua; */
+    min-height: 300px;
+}
+
+.col h4{
+    color: #7289da;
+    padding-top: 40px;
+}
+
+.col ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.footer-divider{
+    display: inline-block;
+    margin: 30px 0 30px 0px;
+    width: 100%;
+    border: 1px solid #7289da ;
+}
