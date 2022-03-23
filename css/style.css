@@ -31,6 +31,10 @@ header{
     background-repeat: no-repeat;
 }
 
+.background{
+    background-color: #f6f6f6;
+}
+
 footer{
     background-color: black;
 }
@@ -40,6 +44,8 @@ footer{
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+
 
 /* DUPLICATE */
 
@@ -58,6 +64,11 @@ header nav ul li, .intro{
     line-height: 16px;
     margin-top: 20px;
     text-align: center;
+    transition: box-shadow 0.3s
+}
+
+.hero-link-b:hover, .hero-link-w:hover, .link-end-main:hover{
+    box-shadow:rgba(33,33,33,.2);
 }
 
 .intro, h2::first-letter, .col ul li a::first-letter, h1::first-letter, p::first-letter, h3::first-letter, h4::first-letter{
@@ -224,7 +235,7 @@ header nav ul li, .intro{
     padding-top: 40px;
 }
 
-.col-big h5, i{
+.col-big h5, .social i{
     display: inline-block;
     vertical-align:middle ;
     color: white;
