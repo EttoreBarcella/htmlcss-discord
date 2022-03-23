@@ -8,10 +8,22 @@
 
 /* COMMON */
 
-.container{
-    max-width: 100%;
+
+.container-head, .container-main{
+    max-width: 1000px;
     min-height: 500px;
     margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* BG COLOR PROJECT */
+
+header{
     background-color: #3161e0;
     position: relative;
     background-image: url(../img/jumbo.png);
@@ -19,24 +31,31 @@
     background-repeat: no-repeat;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+/* DUPLICATE */
+
+header nav ul li, .intro{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.hero-link-b, .hero-link-w{
+    display: inline-block;
+    text-decoration: none;
+    height: 32px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin-top: 20px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.intro, h2::first-letter, h1::first-letter, p::first-letter{
+    text-transform: capitalize;
+}
 
 /* HEADER */
 
-.navigation-heading{
-    max-width: 1200px;
-    margin: auto;
-}
-
- header nav ul li, .intro{
-    display: inline-block;
-    text-align: center;
-
-}
 
 
  header nav ul{
@@ -69,14 +88,12 @@
 }
 
 
-
 .intro{
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 10px;
     margin: 10px;
-    text-transform: capitalize;
     font-weight: bold;
 }
 
@@ -107,7 +124,6 @@
 }
 
 
-
 .hero-link-w{
     color: white;
     background-color: black;
@@ -118,19 +134,53 @@
     background-color: white;
 }
 
-.hero-link-b, .hero-link-w{
-    display: inline-block;
-    text-decoration: none;
-    height: 32px;
-    padding: 8px 20px;
-    border-radius: 40px;
-    margin-top: 20px;
-    line-height: 16px;
-    text-align: center;
-}
 
 /* MAIN */
 
+.container-main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
+.box-img{
+    width: 70%;
+    float: left;
+    min-height: 500px;
+}
+
+.box-text{
+    display: inline-block;
+    width: 30%;
+    float: left;
+    min-height: 500px;
+    padding-left: 100px;
+    padding-top: 40px;
+    text-align: left;
+}
+
+.box-text h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+
+.box-img img{
+    width: 100%;
+}
+
+/* MAIN LAST ARTICLE */
+
+.fourth-article{
+    width: 50%;
+    min-height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.fourth-img{
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+}
 
 /* FOOTER */
